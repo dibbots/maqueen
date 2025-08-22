@@ -1,2 +1,4 @@
 # maqueen
-Rust library for DFRobot micro:Maqueen
+Rust library for the DFRobot micro:Maqueen
+
+⚠️ Info ⚠️ : Under construction.

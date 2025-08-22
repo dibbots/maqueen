@@ -1,0 +1,46 @@
+# Copyright © 2025 Stephan Kunz
+[package]
+resolver = "3"
+name = "maqueen"
+version = "0.0.0"
+edition = "2024"
+license-file = "LICENSE"
+authors = ["stepkun <stephan.kunz@kabelbw.de>"]
+description = "A Rust library for the DFRobot micro:Maqueen"
+rust-version = "1.86.0"
+repository = "https://github.com/stepkun/maqueen.git"
+homepage = "http://github.com/stepkun/maqueen.git"
+documentation = "https://docs.rs/maqueen"
+readme = "README.md"
+keywords = ["robots", "robotics"]
+categories = ["development-tools", "science::robotics"]
+exclude = ["laze*", "benches/**", "examples/**", "tests/**"]
+
+[lib]
+name = "maqueen"
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = [
+  'cfg(context, values(any()))',
+] }
+unsafe_code = "warn"
+missing_docs = "warn"
+#unused="allow" # for dev only
+
+[lints.rustdoc]
+private_intra_doc_links = "allow"
+
+[lints.clippy]
+enum_glob_use = "deny"
+pedantic = { level = "deny", priority = -1 }
+nursery = { level = "deny", priority = -1 }
+unwrap_used = "deny"
+
+
+[dependencies]
+
+[build-dependencies]
+
+[dev-dependencies]
+
+[features]
