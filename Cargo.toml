@@ -2,14 +2,14 @@
 [package]
 resolver = "3"
 name = "maqueen"
-version = "0.0.0"
+version = "0.0.1"
 edition = "2024"
 license-file = "LICENSE"
 authors = ["stepkun <stephan.kunz@kabelbw.de>"]
 description = "A Rust library for the DFRobot micro:Maqueen"
-rust-version = "1.86.0"
+rust-version = "1.90.0"
 repository = "https://github.com/stepkun/maqueen.git"
-homepage = "http://github.com/stepkun/maqueen.git"
+homepage = "https://github.com/stepkun/maqueen.git"
 documentation = "https://docs.rs/maqueen"
 readme = "README.md"
 keywords = ["robots", "robotics"]
